@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Body {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.Fondo {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Fondo-imgWindows {
+    position: relative;
+
+    max-width: 100vw;
+    object-fit: contain;
+    z-index: -1;
+
+}
+
+.FondoPrimeraCapa{
+    position: relative;
+    top: 0;
+}
+
+.Fondo-bart {
+    position: relative;
+    bottom: 400px;
+    width: 400px;
+    
+}
