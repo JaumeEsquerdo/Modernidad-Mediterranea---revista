@@ -1,7 +1,15 @@
 # proyecto-final
 
 
-## Ideas
+## Idea nº2
+
+- Hacer un "mini juego" en el que eres un personaje y tienes que contestar a un especie de genio para seguir avanzando...
+La idea es seguir avanzando de página en página con cada página estilada diferente y así aplicar varias formas de conocimiento conforme vas avanzando la página.
+
+- Sería interesante poder unir una historia general.
+
+
+<!-- ## Idea  nº1
 
 # Referencias
 Referencia principal "neal.fun"
@@ -26,4 +34,4 @@ Referencia capítulo `Los Simpsons` capítulo Bart cabando un hoyo.
 - El tope sería el centro de la tierra.
 
 - Hay que investigar, aunque creo que se podría, la manera en la que quizás pueda cambiar un poco de apariencia con JS, por ejemplo, cuando esté cerca que tenga un traje especial? 
-
+ -->
