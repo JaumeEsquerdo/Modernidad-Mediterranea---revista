@@ -13,7 +13,8 @@ Se busca que sea una experiencia educativa, pero también interactiva (ofrecer a
 -También como exclusividad se puede facilitar una lista interactiva(visual) de tiendas, diseñadores o proveedores de muebles que coincidan con la decoración del estilo.
 
 # Páginas y secciones
-- Inicio: Brevísima introducción del estilo moderno mediterráneo + llamada a la acción algo como "descubre como transformar tu hogar" con un botón (esto se valorará mejor en el boceto y sobretodo en el wireframe).
+- Inicio: Brevísima introducción del estilo moderno mediterráneo + llamada a la acción algo como "descubre como transformar tu hogar" con un botón (esto se valorará mejor en el boceto y sobretodo en el wireframe). 
+
 
 - Estilo moderno mediterráneo: esta sería la parte más descriptiva del estilo. Yo pondría una breve introducción como historia (en cuanto al texto, imágenes o video ya habría antes). A continuación, dentro de esta página estaría las secciones de materiales principales, colores o paleta de colores predominantes, formas y diseño de la arquitectura.
 
