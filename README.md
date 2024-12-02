@@ -1,12 +1,25 @@
 # proyecto-final
 
 
+## Idea de proyecto Página informativa sobre arquitectura
+
+La página se va a centrar en poder informar al usuario sobre el estilo arquitectónico de "moderno medtierráneo". 
+
+*La base del proyecto será en mostrar un espacio intectractivo que se basa en funcionalidad y diseño, para inspirar, enseñar y ayudar a los usuarios a aplicar este estilo en sus propios hogares.*
+Se busca que sea una experiencia educativa, pero también interactiva (ofrecer algo más a los usuarios).
+
+
+
+
+
+
+<!-- 
 ## Idea nº2
 
 - Hacer un "mini juego" en el que eres un personaje y tienes que contestar a un especie de genio para seguir avanzando...
 La idea es seguir avanzando de página en página con cada página estilada diferente y así aplicar varias formas de conocimiento conforme vas avanzando la página.
 
-- Sería interesante poder unir una historia general.
+- Sería interesante poder unir una historia general. -->
 
 
 <!-- ## Idea  nº1
