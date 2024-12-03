@@ -25,7 +25,18 @@ Se busca que sea una experiencia educativa, pero también interactiva (ofrecer a
 - Contacto / Suscripción: contar un poco quien soy, porque me interesa contar en una página web esta información. Explicar que desde siempre me ha gustado la arquitectura y ahora de mayor al no haberme dedicado a ello, pero haber reorganizado mi carrera profesional en ser "arquitecto web" aprovecho esta ocasión para dar un homenaje al hogar de ensueños que es para mí este tipo de estilo arquitectónico.
 Más allá de esta explicación habría que explicar el tema de la suscripción en caso de que tenga sentido que la haya, que entiendo que si.
 
+# Interactividad clave de la página
 
+- registro de cuenta
+- galería interactiva con lightbox
+- galería interactiva con una imagen(que se puede clickar en un lugar especifico para hacer zoom y poder abrir unas características)
+- (si da tiempo intentar hacer como un mapa con lsa casas más representativas de este estilo)
+
+
+# páginas interesantes en cuanto a diseño:
+snohetta;
+https://henninglarsen.com/
+https://big.dk
 
 
 <!-- 
