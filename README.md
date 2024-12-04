@@ -3,7 +3,17 @@
 
 ## Idea de proyecto Página informativa sobre arquitectura
 
-La página se va a centrar en poder informar al usuario sobre el estilo arquitectónico de "moderno medtierráneo". 
+- idea a partir de CHATGPT: 
+    Un blog ficticio que cuenta la historia detrás de edificios icónicos (reales o inventados).
+    fotos  con efecto slider para mostrar cambios históricos en un edificio o estilo.
+
+    Descripción: Una web que ofrece consejos, recursos y análisis de tendencias para arquitectos modernos.
+    
+    Sección "Proyectos destacados": Cada artículo puede incluir un slider con ejemplos interactivos de casas o edificios.
+
+
+
+- La página se va a centrar en poder informar al usuario sobre el estilo arquitectónico de "moderno medtierráneo". 
 
 *La base del proyecto será en mostrar un espacio intectractivo que se basa en funcionalidad y diseño, para inspirar, enseñar y ayudar a los usuarios a aplicar este estilo en sus propios hogares.*
 Se busca que sea una experiencia educativa, pero también interactiva (ofrecer algo más a los usuarios).
@@ -37,6 +47,8 @@ Más allá de esta explicación habría que explicar el tema de la suscripción 
 snohetta;
 https://henninglarsen.com/
 https://big.dk
+https://arkup.com/
+https://theglasshouse.org/
 
 
 <!-- 
