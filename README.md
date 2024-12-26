@@ -86,3 +86,8 @@ Referencia capítulo `Los Simpsons` capítulo Bart cabando un hoyo.
 
 - Hay que investigar, aunque creo que se podría, la manera en la que quizás pueda cambiar un poco de apariencia con JS, por ejemplo, cuando esté cerca que tenga un traje especial? 
  -->
+
+
+# Idea proyhecto WP
+
+página de aceite, imitar aceite de la almacera de Torremazanas. Pero cambiando la parte de la tienda por unas catas o visitas a la almacera.
