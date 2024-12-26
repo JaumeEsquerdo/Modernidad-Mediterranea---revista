@@ -91,3 +91,5 @@ Referencia capítulo `Los Simpsons` capítulo Bart cabando un hoyo.
 # Idea proyhecto WP
 
 página de aceite, imitar aceite de la almacera de Torremazanas. Pero cambiando la parte de la tienda por unas catas o visitas a la almacera.
+
+Por tanto se hará un bucle con el cpt del plugin scf y a parte el apartado de blog.
