@@ -1,10 +1,33 @@
 
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+.Body{
+    height: 100vh;
+}
 .FondoInicial{
-    background-image: url();
+    background-image: url(../img/pexels-grafixartphoto-4254554.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 1);
+
+}
+
+.Logo{
+    position: absolute;
+    font-size: 20rem;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: right;
+    background: linear-gradient(to right,  #ff7e5f, #feb47b);
+    -webkit-background-clip: text; /* con estas lineas estoy recortando el fondo, al cual se le aplica el linear gradient, para que solo se quede donde está el texto */
+    background-clip: text;
+    color: transparent; /* y con esto hago que el color por defecto del texto desaparezca y por tanto se quede solo el del fondo con el linear gradient */
 }
