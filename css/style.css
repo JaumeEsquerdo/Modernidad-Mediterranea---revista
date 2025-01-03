@@ -1,33 +1,76 @@
+:root {
+    --color1: #4C585B;
+    --color2: #7E99A3;
+    --color3: #A5BFCC;
+    --color4: #F4EDD3;
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+    --font-tertiary: 'Lora', serif;
+}
 
-
-*{
-    box-sizing: border-box;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.Body{
+
+.Body {
+    font-family: var(--font-primary);
+    font-weight: 400;
     height: 100vh;
+
 }
-.FondoInicial{
-    background-image: url(../img/ventanaMediterranea.jpeg);
+
+.Header {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+
+.Header-navItem {
+    color: var(--color4);
+    list-style: none;
+    padding: 10px 0;
+}
+
+.FondoInicial {
+    background-image: url(/img/ventanaMediterranea.jpeg);
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 1);
-
 }
 
-.Logo{
-    position: absolute;
-    font-size: 15rem;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    text-align: right;
-    background: linear-gradient(to right,  rgba(255, 126, 95, 0.8), rgba(254, 180, 123, 0.8));
-    -webkit-background-clip: text; /* con estas lineas estoy recortando el fondo, al cual se le aplica el linear gradient, para que solo se quede donde está el texto */
+
+.FondoInicial-title{
+    color: var(--color1)
+}
+.Logo {
+    font-size: 12rem;
+    background: linear-gradient(to right, rgba(255, 126, 95, 0.9), rgba(254, 180, 123, 0.9));
+    -webkit-background-clip: text;
+    /* con estas lineas estoy recortando el fondo, al cual se le aplica el linear gradient, para que solo se quede donde está el texto */
     background-clip: text;
-    color: transparent; /* y con esto hago que el color por defecto del texto desaparezca y por tanto se quede solo el del fondo con el linear gradient */
+    color: transparent;
+    /* y con esto hago que el color por defecto del texto desaparezca y por tanto se quede solo el del fondo con el linear gradient */
+}
+
+.Logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    pointer-events: auto;
+    /* Solo afecta a este contenedor */
 }
