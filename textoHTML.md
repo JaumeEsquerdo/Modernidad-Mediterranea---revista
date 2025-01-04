@@ -1,14 +1,14 @@
 # 1. HOME
 
 ## Redescubre la esencia del Mediterráneo
-Imagina un espacio donde la brisa del mar se encuentra con la claridad del diseño moderno. Donde cada rincón cuenta una historia de calma, luz y conexión con la naturaleza.
+TEXTO EN LA SECTION 1: Redescubre la esencia del Mediterráneo
 
-La Arquitectura Mediterránea Moderna no es solo un estilo; es un reflejo del alma. Es la calidez del sol que se filtra entre los muros blancos, la serenidad de las líneas simples y la armonía de materiales que respiran.
+TEXTO EN LA SECTION 2: La Arquitectura Mediterránea Moderna no es solo un estilo; es un reflejo del alma. Es la calidez del sol que se filtra entre los muros blancos, la serenidad de las líneas simples y la armonía de materiales que respiran.
 
-¿Estás listo para transformar tu hogar en un refugio único?
+TEXTO EN LA SECTION 3: ¿Estás listo para transformar tu hogar en un refugio único?
 Déjate guiar por la inspiración y descubre cómo el diseño puede convertirse en un estilo de vida.
 
-Comienza tu viaje aquí
+Date una vuelta por el nuevo mediterráneo 
 
 # 2. Estilo Mediterráneo Moderno
 
