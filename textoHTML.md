@@ -14,6 +14,10 @@ Date una vuelta por el nuevo mediterráneo
 
 - Historia y Orígenes:
 
+La arquitectura mediterránea, con su esencia atemporal, refleja la sencillez y calidez de la vida junto al mar. Hoy sigue inspirando gracias a su capacidad de reinventarse, adaptando sus raíces tradicionales a un diseño contemporáneo.
+
+Ser del Mediterráneo es vivir en equilibrio con la naturaleza, disfrutando de la luz, la calma y la belleza de lo esencial
+
 "Un estilo que nace del sol, el mar y la conexión con la naturaleza. Una arquitectura que combina tradición y modernidad para crear espacios llenos de luz y armonía."
 
 - Materiales Principales:
