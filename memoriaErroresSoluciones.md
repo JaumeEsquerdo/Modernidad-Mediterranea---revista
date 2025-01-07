@@ -58,3 +58,89 @@ Luego más tarde decidí añadir otro fondo, y al componerse de 3 opciones de fo
         })
 
 ```
+
+## Problemas para ajustar el sticky en la info basica de las casas de estilo mediterréano
+
+En esta sección me encontré ante uno de los mayores problemas que he tenido en el proyecto. Aunque parece simple, tuve la mala suerte de poner `overflow:hidden` en toda la página `*{}` por un problema en el que se me expandía al principio las imagenes en el eje X. Y más tarde, al tratar de poner el `position: sticky` no ocurría nada con el texto, es decir, no se desplazaba hacia abajo. Después de mucho tiempo probando y errando e intentando ayudarme tanto con ChatGPT como con el ejercicio que hicimos en clas de "diccionario-sticky.html". Logré al final averiguar que el overflow no dejaba desplazar al sticky.
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.Header-navList {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+}
+
+.Header-navItem {
+    text-decoration: none;
+    color: black;
+}
+
+.Header-navItem:active {
+    color: #f8f8f8;
+}
+
+.Main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Main-text {
+    display: flex;
+    margin: 70px 30px;
+}
+
+/**
+este es el contenedor al que el sticky toma de referencia para desplazarse
+*/
+.Image-container {
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    
+
+}
+
+.Image-item {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+/**
+este es la clase al que se le aplica el STICKY
+*/
+.Location-image { 
+    position: sticky;
+    top: 20px;
+    left: 20px;
+    /* color: var(); */
+    color: #e0e0e0;
+    font-size: 1.4rem;
+    z-index: 1;
+}
+
+```
