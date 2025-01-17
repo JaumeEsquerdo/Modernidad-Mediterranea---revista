@@ -144,3 +144,33 @@ este es la clase al que se le aplica el STICKY
 }
 
 ```
+
+
+## Problema / conflicto en las transiciones de las imagenes al hacer hover.
+
+Tuve un problema al querer aplicar alguna transición suave en la sección de la web "Materiales". Mi primera idea era, que al hacer hover hiciera una pequeña transición de giro de la tarjeta de unos segundos. Pero al intentar aplicarlo no lo conseguí, ya que al parecer con la forma de incorporar las imagenes mediante un cambio de src no funcionaba esa opción.
+
+Busqué un poco por internet y encontré que podría haber hecho el cambio mediante CSS en el hover con `background-image: url()`. O también otra manera podría haber sido superponer una con otra y aplicar un opacity 0 en la que no quiero que se vea cuando se haga hover o no.
+
+Para solucionar ese problema y dejar este código de JS, pero aplicando alguna transición en el hover le puse un cambio en el hover tanto de `scale` como en `opacity` al hacer el hover y cambiar de img.
+
+
+
+```js
+        //seleccionamos todas las imagenes
+        const images = document.querySelectorAll('.Material-img');
+
+        images.forEach(image => {
+
+            image.addEventListener('mouseenter', () => {
+                image.src = image.dataset.hover; //cambiamos la imagen por la que tiene el data-hover puesto en la img (data no actua como src si no q guardo el src ahi para luego ponerlo/devolverlo al src)
+            });
+
+
+            //restauramos la imagen que estaba antes al salir del hover
+
+            image.addEventListener('mouseleave', () => {
+                image.src = image.dataset.original; //cambiamos la imagen por la que tiene el data original
+            });
+        });
+```
