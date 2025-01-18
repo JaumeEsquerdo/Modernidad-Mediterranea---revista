@@ -185,3 +185,7 @@ A la hora de la creación del proyecto, al trabajarlo durante las navidades, emp
 
 Al abrir la pagina que crear github del repositorio, no se me aplicaba el CSS.
 La solución, al haberme ocurrido ya en alguna actividad de clase durante el curso, fue quitar el pimer `/` en los css enlazados ya que la carpeta se situaba en la raiz del repositorio.
+
+error: src="/img/fondo-segundo.jpg"
+
+solución: src="img/fondo-segundo.jpg" 
