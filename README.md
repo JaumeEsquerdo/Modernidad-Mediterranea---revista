@@ -25,4 +25,7 @@ Además, he incorporado elementos interactivos para enriquecer la experiencia de
 - Filtro de objetos.
 - Generador de imagenes dinámicas según la imágen clicada anterior.
 
-Las imágenes que se muestran en el proyecto están extraídas de dos páginas principalmente. https://www.revistaad.es/arquitectura y 
+Las imágenes que se muestran en el proyecto están extraídas de dos páginas principalmente. https://www.revistaad.es/arquitectura y https://www.sklum.com/es/ . La gran mayoría de imágenes han sido extraídas en formato wepb, y más tarde las he pasado todas a jpg con `https://www.iloveimg.com/es/convertir-a-jpg/webp-a-jpg` para más tarde redimensionarlas dejando el tamaño máximo del mismo, dependiendo si fuera altura o anchura el mayor, a 1200px, y por haciendo que el otro valor en automático (normalmente da 800px).
+Después he comprimido esta imágen redimensionada con la misma aplicación. 
+
+Me he basado en la página para tomar los valores de altura y anchura de las imágenes `https://www.shopify.com/es/blog/imagenes-para-web-tamano` . Nota especial con las imágenes que hacen de fondo completo de la página, por las que las he retocado para que tengan estas medidas : `Background	2560 x 1400 pixels` como dice la propia página de Shopify.
