@@ -12,7 +12,8 @@ El proyecto consiste en una página web que funciona como un blog interactivo, d
 La estructura del sitio incluye varias secciones clave:
 
 Inicio, donde introduzco el estilo con una breve explicación y una llamada a la acción para explorar más contenido.
-Estilo Moderno Mediterráneo, una sección descriptiva en la que detallo los elementos más representativos del estilo, como los materiales, colores y formas predominantes. Aquí se busca educar al usuario sobre cómo este estilo fusiona lo moderno con lo tradicional.
+
+Estilo Moderno Mediterráneo, una sección donde muestro mediante imagenes ejemplos de casas que representan el estilo de mediterráneo con la versión "moderna" del mismo. Es decir el enfoque actual al estilo de siempre del mediterráneo. Cada imagen es clickable y te lleva a la entrada correspondiente donde se ve cada casa con más detalle,
 
 Inspiración por materiales, una galería de fotos con un  
 
