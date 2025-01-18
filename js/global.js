@@ -4,7 +4,7 @@ const headerNavs = document.querySelectorAll('.Header-navItem');
 const currentURL = window.location.href;
 
 // detectar si estoy en github pages o en local
-const basePath = window.location.pathname.includes('/proyecto-final')? '/proyecto-final' : '/';
+const basePath = window.location.pathname.includes('/proyecto-final') ? '/proyecto-final' : '/';
 
 headerNavs.forEach(nav => {
     const href = nav.getAttribute('href'); // para obtener el href del .Header-navItem del html
@@ -25,13 +25,13 @@ headerNavs.forEach(nav => {
 
     //añado la clase "isActive" al nav que le corersponda
 
-    if (currentURL == absoluteURL){
+    if (currentURL == absoluteURL) {
         nav.classList.add('isActive');
     }
 
     //y finalmente hago que se quite la clase isActive de los todos los nav cuando le doy click a algun nav y se lo pongo al que le toque
-    nav.addEventListener('click', () =>{
-        headerNavs.forEach(a => a.classList.remove ('isActive'));
+    nav.addEventListener('click', () => {
+        headerNavs.forEach(a => a.classList.remove('isActive'));
         nav.classList.add('isActive');
     });
 
