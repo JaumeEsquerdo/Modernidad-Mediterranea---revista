@@ -9,11 +9,15 @@ const basePath = window.location.pathname.includes('/proyecto-final') ? '/proyec
 headerNavs.forEach(nav => {
     const href = nav.getAttribute('href'); // para obtener el href del .Header-navItem del html
 
-    /**creo yo la URL que tendría la página actual del github mediante colocar al final el href actual
+    /**Creo yo la URL que tendría la página actual del github mediante colocar al final el href actual;
     * Es decir combino la URL de la base de la web + el href que he agarrado antes (como materiales.html)
     * .origin hace que me devuelva la raiz de la URL (si mi URL es //jaumeesquerdo.github.io/proyecto-final/materiales.html ; me devolveria  //jaumeesquerdo.github.io)
-    * Esta constante me he apoyado con chatGPT para poder agarrar bien la base de la URL, ya que no sabía como podía hacerlo sin escribrir muchísimo código
     * 
+    * Para generar estas constantes me he apoyado con chatGPT para poder agarrar 
+    * bien la base de la URL, ya que no sabía como podía hacerlo sin escribrir 
+    * muchísimo código
+    * 
+    * Ejemplo de uso:
     * ejemplo basePath = `/proyecto-final/` (si estoy en github pages) y `/` (si estoy en local) 
     * ejemplo href = `index.html` (href es el atributo de algun enlace HTML)
     * ejemplo basePath + href = `/proyecto-final/index.html`
