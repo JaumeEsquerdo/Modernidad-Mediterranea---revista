@@ -209,4 +209,63 @@ headerNavs.forEach(nav => {
 });
 ```
 
-para solucionar esto tuve que quitar la parte inicial del href para conseguir solo el final de la URL
+El siguiente problema fue que en github la comparación con el final de la URL se necesita incluir el repositorio donde está. Por eso aquí solo estaría funcional en local ya que compararía solo el archivo html. ej: `contact.html`
+
+Y el necesitado sería: `/proyecto-final/contact.html`
+
+Para solucionar esto, con ayuda en esta parte de chatGPT utilizo lo siguiente:
+
+```js
+const headerNavs = document.querySelectorAll('.Header-navItem');
+
+//obtengo la URL completa de la pagina actual
+const currentURL = window.location.href;
+
+// detectar si estoy en github pages o en local
+const basePath = window.location.pathname.includes('/proyecto-final') ? '/proyecto-final' : '/';
+
+headerNavs.forEach(nav => {
+    const href = nav.getAttribute('href'); // para obtener el href del .Header-navItem del html
+
+    /**Creo yo la URL que tendría la página actual del github mediante colocar al final el href actual;
+    * Es decir combino la URL de la base de la web + el href que he agarrado antes (como materiales.html)
+    * .origin hace que me devuelva la raiz de la URL (si mi URL es //jaumeesquerdo.github.io/proyecto-final/materiales.html ; me devolveria  //jaumeesquerdo.github.io)
+    * 
+    * Para generar estas constantes me he apoyado con chatGPT para poder agarrar 
+    * bien la base de la URL, ya que no sabía como podía hacerlo sin escribrir 
+    * muchísimo código
+    * 
+    * Ejemplo de uso:
+    * ejemplo basePath = `/proyecto-final/` (si estoy en github pages) y `/` (si estoy en local) 
+    * ejemplo href = `index.html` (href es el atributo de algun enlace HTML)
+    * ejemplo basePath + href = `/proyecto-final/index.html`
+    * Y con window.location.origin incluyo el orgien de la URL actual en este caso, ejemplo = `https://jaumeesquerdo.github.io`
+    * Y para que funcione se pone primero la parte que quiero modificar (basePath + href) y despues de la coma el origen de la base (window.location.origin)
+     */
+    const absoluteURL = new URL(basePath + href, window.location.origin).href;
+
+
+    //añado la clase "isActive" al nav que le corersponda
+
+    if (currentURL == absoluteURL) {
+        nav.classList.add('isActive');
+    }
+
+    // //y finalmente hago que se quite la clase isActive de los todos los nav cuando le doy click a algun nav y se lo pongo al que le toque
+    // nav.addEventListener('click', () => {
+    //     headerNavs.forEach(a => a.classList.remove('isActive'));
+    //     nav.classList.add('isActive');
+    // });
+
+});
+```
+Dejo esto último del problema anterior comentado ya que en este caso, no se necesita que cuando le de click se borre el anterior `isActive` incluido en algún `a`. Ya que al recargar la página ya se reinicia solo. A base de probar me di cuenta de este comportamiento.
+```js
+
+// //y finalmente hago que se quite la clase isActive de los todos los nav cuando le doy click a algun nav y se lo pongo al que le toque
+     nav.addEventListener('click', () => {
+         headerNavs.forEach(a => a.classList.remove('isActive'));
+         nav.classList.add('isActive');
+     });
+
+```

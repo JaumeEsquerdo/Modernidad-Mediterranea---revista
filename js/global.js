@@ -33,11 +33,5 @@ headerNavs.forEach(nav => {
         nav.classList.add('isActive');
     }
 
-    // //y finalmente hago que se quite la clase isActive de los todos los nav cuando le doy click a algun nav y se lo pongo al que le toque
-    // nav.addEventListener('click', () => {
-    //     headerNavs.forEach(a => a.classList.remove('isActive'));
-    //     nav.classList.add('isActive');
-    // });
-
 });
 
