@@ -24,3 +24,5 @@ Además, he incorporado elementos interactivos para enriquecer la experiencia de
 - Slider
 - Filtro de objetos.
 - Generador de imagenes dinámicas según la imágen clicada anterior.
+
+Las imágenes que se muestran en el proyecto están extraídas de dos páginas principalmente. https://www.revistaad.es/arquitectura y 

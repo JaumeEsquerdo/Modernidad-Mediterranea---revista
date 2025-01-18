@@ -44,9 +44,9 @@
                     });
     
                     //eliminar y agregar la clase activa para que se entienda que taxonomía/filtro has clickado
-                    navLinks.forEach(nav => nav.classList.remove('active')); //primero elimo la clase active de todos los links para que no se quede con el active el link seleccionado anterior
+                    navLinks.forEach(nav => nav.classList.remove('isActive')); //primero elimo la clase active de todos los links para que no se quede con el active el link seleccionado anterior
     
-                    link.classList.add('active'); // "link" es el elemento que ha sido clickado, sale de aqui "navLinks.forEach(link =>"" y se le añade la clase active
+                    link.classList.add('isActive'); // "link" es el elemento que ha sido clickado, sale de aqui "navLinks.forEach(link =>"" y se le añade la clase active
     
                 });
     
