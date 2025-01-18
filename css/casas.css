@@ -1,0 +1,330 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+}
+
+.Main-div {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 70px auto;
+}
+
+.Main-house {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Main-houseDescription {
+    width: 50%;
+}
+
+.First-img {
+    height: 75vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.Main-p {
+    color: var(--color-text);
+    font-size: var(--font-size-medium);
+    padding-top: 15px;
+}
+
+.Main-title {
+    font-size: var(--font-size-large);
+    font-family: var(--font-tertiary), sans-serif;
+    color: var(--color-text);
+}
+
+/* GRID */
+.Grid-casa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* por defecto el grid tiene cuatro columnas*/
+    gap: 10px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.Grid-casaItem {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+
+}
+
+/* .Grid-casaItem--1,
+.Grid-casaItem--4 {
+    /* grid-column: span 2; */
+/* la imagen 1 y 4 ocupan dos filas
+} */
+
+/* MOSAICO*/
+.Mosaico {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 60px;
+}
+
+.BtnMosaico,
+.BtnGrid {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+/* active de ICONO */
+.material-symbols-outlined {
+    margin-right: 15px;
+}
+
+.material-symbols-outlined:active {
+    color: var(--color-text);
+}
+
+.isActive {
+    scale: 2;
+}
+
+
+
+/* SLIDER */
+
+.Slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 120px;
+}
+
+.Slider-text {
+    color: var(--color-text);
+    font-size: var(--font-size-medium);
+}
+
+.Slider-images {
+    width: 200%;
+    display: flex;
+    transition: transform 0.5s ease-in;
+}
+
+.Slide-item,
+.Slide-itemLink {
+    width: 100%;
+    height: auto;
+}
+
+
+.Slider-image {
+    max-height: 450px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(75%);
+    transition: filter 0.4s ease-in;
+}
+
+.Slider-image:hover {
+
+    filter: brightness(90%);
+}
+
+.Slider-anterior,
+.Slider-siguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-hs);
+    color: var(--color-bg2);
+    border: none;
+    border-radius: var(--button-radius);
+    cursor: pointer;
+    padding: 7px 20px;
+    font-size: var(--font-size-medium);
+    z-index: 3;
+    height: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+
+.Slider-anterior:hover,
+.Slider-siguiente:hover {
+    background: var(--color-bg2);
+    color: var(--color-text);
+}
+
+.Slider-anterior:active,
+.Slider-siguiente:active {
+
+    /* Efecto clic, tiene la propiedad "inset" que genera la sombra dentro del elemento, es decir del borde hacia dentro */
+    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-color-dark),
+        inset calc(var(--shadow-offset) * -1) calc(var(--shadow-offset) * -1) var(--shadow-blur) var(--shadow-color-dark);
+    /* Efecto pulsado */
+}
+
+.Slider-anterior {
+    left: 10px;
+
+}
+
+.Slider-siguiente {
+    right: 10px;
+}
+
+.--blur {
+    /* crea efecto de opacidad para las imagenes no visibles */
+    opacity: 0.3;
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Ajuste responsive para tablet*/
+@media screen and (max-width: 769px) {
+    .Main-house {
+
+
+        padding: 20px;
+    }
+
+    .Main-div {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+
+    .Main-p {
+        width: 300px;
+
+    }
+
+    .First-img {
+
+        height: 50vh;
+    }
+
+    .Btn-div {
+
+        margin-top: 20px;
+    }
+
+    .BtnMosaico,
+    .BtnGrid {
+        margin: 10px;
+    }
+
+    .Grid-casa {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .Mosaico {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Grid-casaItem {
+        height: 50vh;
+    }
+
+    .Slider {
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .Slider-images {
+        display: block;
+        width: 100%;
+    }
+
+    .--blur {
+        opacity: 1;
+
+    }
+
+    .Slider-anterior,
+    .Slider-siguiente {
+        display: none;
+    }
+
+}
+
+
+/* Ajuste responsive para móvil*/
+@media screen and (max-width: 480px) {
+
+    .Main-div {
+
+        margin: 20px auto;
+        flex-direction: column;
+    }
+
+    .Main-house {
+        padding: 10px;
+    }
+
+    .Main-houseDescription {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .First-img {
+        height: 50vh;
+    }
+
+    .Main-p {
+        font-size: var(--font-size-small);
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Main-title {
+        font-size: var(--font-size-medium);
+    }
+
+    .Grid-casa {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .Grid-casaItem {
+        height: 40vh;
+    }
+
+    /* para el moisaco */
+
+    .Mosaico {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Slider{
+        padding: 10px;
+        margin-top: 90px;
+    }
+
+    .Slider-image{
+        max-height: 300px;
+        
+    }
+
+    .isActive {
+        scale: 1.3;
+    }
+    
+
+}

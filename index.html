@@ -4,43 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Modernidad Mediterránea</title>
 
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+
+    <link rel="stylesheet" href="/css/globales.css">
+
+    <link rel="stylesheet" href="/css/index.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script defer src="js/index.js"></script>
 </head>
 
 <body class="Body">
-    <section class="FondoInicial">
-
-
+    <!-- Primer fondo -->
+    <section class="FondoInicial isVisible">
+        <img class="FondoHome" src="/img/fondo-primero.jpg" loading="lazy" alt="Casa mediterránea">
+        <div class="Overlay"></div>
         <header class="Header">
-            <nav class="Header-nav">
-                <ul class="Header-navList">
-                    <li class="Header-navItem">Home</li>
-                    <li class="Header-navItem">Estilo Mediterráneo</li>
-                    <li class="Header-navItem">Inspiración</li>
-                </ul>
-            </nav>
-            <h2 class="FondoInicial-title">Redescubre la esencia del Mediterráneo</h2>
+            <div class="Header-container">
+                <h1 class="Logo">MODERNIDAD MEDITERRÁNEA</h1>
+                <nav class="Header-nav">
+                    <ul class="Header-navList">
+
+                        <li><a class="Header-navItem" href="/estilo-mediterraneo.html">Estilo Mediterráneo</a></li>
+                        <li><a class="Header-navItem" href="/materiales.html">Materiales</a></li>
+                        <li><a class="Header-navItem" href="/contact.html">Contacto</a></li>
+
+                    </ul>
+                </nav>
+                <div class="MainTextInicial">
+                    <h2 class="FondoInicial-title">Redescubre la esencia del Mediterráneo</h2>
+                    <h3 class="FondoInicial-subTitle">Una ventana para explorar y dejarte inspirar por el diseño
+                        mediterráneo moderno</h3>
+                </div>
+            </div>
+
         </header>
-        <h1 class="Logo">Modernidad Mediterránea</h1>
+
+        <div class="Btn">
+            <button class="Btn-nxt"><span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                </span></button>
+        </div>
+
+
+
+
+
 
 
 
     </section>
 
-    <section class="FondoSegundo">
-        <h2>SegundoFondo</h2>
+    <section class="FondoSegundo isHidden">
+        <img class="FondoHome" src="/img/fondo-segundo.jpg" loading="lazy" alt="Casa mediterránea">
+        <div class="Overlay"></div>
+        <div class="MainText">
+            <h2 class="FondoInicial-subTitle">Descubre cómo los espacios abiertos y multifuncionales, junto con
+                materiales naturales como piedra y
+                madera,
+                crean hogares que reflejan la serenidad y luminosidad del Mediterráneo</h2>
+        </div>
+        <div class="Btn">
+            <button class="Btn-nxt"><span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                </span></button>
+        </div>
+
+
+    </section>
+
+    <section class="FondoTercero isHidden">
+        <img class="FondoHome" src="/img/fondo-tercero.jpg" loading="lazy" alt="Casa mediterránea">
+        <div class="Overlay"></div>
+        <div class="MainText">
+            <h2 class="FondoInicial-subTitle">Sumérgete en diseños que integran interior y exterior, aprovechando la luz
+                natural y la simplicidad de
+                las
+                formas, para ofrecer una experiencia de vida en armonía con el entorno</h2>
+
+            <a href="/estilo-mediterraneo.html" class="btnFondoTercero">Date una vuelta por el nuevo mediterráneo </a>
+        </div>
+        <div class="Btn">
+            <button class="Btn-nxt"><span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                </span></button>
+        </div>
 
     </section>
 
 
 
-    <footer class="Footer">
 
-    </footer>
-
-    <script src="/js/index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,164 @@
+      /* CONTACTO */
+
+      .Main {
+          display: flex;
+          justify-content: space-around;
+          flex: 1;
+          width: 100%;
+      }
+
+      .Picture-contact {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          width: 60%;
+          height: 100%;
+      }
+
+      .Image-contact {
+            filter: grayscale(66%); /* filter grayscale para hacer blanco y negro la img */
+          width: auto;
+          height: 900px;
+          object-fit: cover;
+      }
+
+      .Contact {
+          width: 70%;
+          height: 60vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          margin: 10px;
+          overflow: auto;
+
+          /* ocultar scroll en navegadores */
+          -ms-overflow-style: none;
+          /* IE and Edge */
+          scrollbar-width: none;
+          /* Firefox */
+
+      }
+
+      /* ocultar scroll en CHROME*/
+      .Contact::-webkit-scrollbar {
+          display: none;
+      }
+
+
+
+
+      .Contact-text {
+        color: var(--color-text);
+          width: 50%;
+          font-size: var(--font-size-medium);
+          padding: 30px;
+          min-width: 350px;
+      }
+
+      .Contact-h {
+        color: var(--color-text);
+          margin: 40px auto;
+          font-size: var(--font-size-large);
+      }
+      .Contact-h--autor{
+        font-family: var(--font-tertiary), sans-serif;
+      }
+
+
+      /* BOTON ESTILO */
+      .scroll-button {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          background: var(--color-text);
+          /* Fondo claro inspirado en tonos mediterráneos */
+          color: var(--color-bg1);
+          /* Verde mediterráneo para el texto */
+          padding: var(--padding-vertical) var(--padding-horizontal);
+          border-radius: var(--border-radius);
+          /* Redondeado discreto */
+          font-size: 16px;
+          font-weight: 500;
+          text-align: center;
+          text-decoration: none;
+          box-shadow: var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-color-dark),
+              calc(var(--shadow-offset) * -1) calc(var(--shadow-offset) * -1) var(--shadow-blur) var(--shadow-color-light);
+          /* Relieve sutil */
+          transition: all 0.3s ease;
+          cursor: pointer;
+      }
+
+      .scroll-button a {
+          color: inherit;
+          text-decoration: none;
+      }
+
+      .scroll-button:hover {
+          background: var(--color-bg2);
+          color: var(--color-text);
+          /* Ligero cambio al pasar el cursor */
+          box-shadow: calc(var(--shadow-offset) / 2) calc(var(--shadow-offset) / 2) calc(var(--shadow-blur) / 2) var(--shadow-color-dark),
+              calc(var(--shadow-offset) * -0.5) calc(var(--shadow-offset) * -0.5) var(--shadow-blur /2) var(--shadow-color-light);
+          /* Sombra más sutil */
+          transform: translateY(-2px);
+          /* Efecto flotante */
+      }
+
+      .scroll-button:active {
+          transform: translateY(2px);
+          /* Efecto clic, tiene la propiedad "inset" que genera la sombra dentro del elemento, es decir del borde hacia dentro */
+          box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-color-dark),
+              inset calc(var(--shadow-offset) * -1) calc(var(--shadow-offset) * -1) var(--shadow-blur) var(--shadow-color-light);
+          /* Efecto pulsado */
+      }
+
+      /* media queries para tablet*/
+      @media screen and (max-width: 769px){
+        .Main{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .Picture-contact{
+            width: 100%;
+            height: 40vh;
+        }
+
+        .Image-contact{
+            width: 100%;
+            height: 100%;
+        }
+
+        .Contact{
+            width: 90%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .Contact-text{
+            width: 80%;
+            padding: 20px;
+        }
+
+        .Contact-h{
+            font-size: 1.5rem;
+            margin: 30px auto;
+        }
+
+      }
+
+      /* media queries para moviles*/
+      @media screen and (max-width: 480px){
+        .Picture-contact{
+            height: 35vh;
+        }
+        .Contact-text{
+            width: 90%;
+            padding: 20px auto;
+        }
+        .Contact-h{
+            font-size: 1.5rem;
+            margin: 20px auto;
+        }
+      }

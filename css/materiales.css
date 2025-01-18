@@ -1,0 +1,166 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+}
+
+.Materials-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.Materials-h1 {
+    font-size: var(--font-size-h);
+    width: 90%;
+    margin: 40px auto;
+    color: var(--color-text);
+    white-space: normal;
+    padding: 0 200px;
+    text-align: center;
+
+}
+
+.Materials-nav {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    white-space: normal;
+}
+
+.Materials-a {
+    display: inline-block;
+    font-size: var(--font-size-medium);
+    color: var(--color-hs);
+    padding: 20px;
+    transition: transform 1s ease-in-out;
+}
+
+.Materials-a:hover {
+    transform: translate(0, -4px);
+}
+
+
+.Materials-text {
+    width: 60%;
+    margin: 20px auto;
+    font-size: var(--font-size-medium);
+    color: var(--color-text);
+    text-align: center;
+}
+
+/* GRID*/
+
+.Materials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 70px;
+
+}
+
+.Material-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Material-img {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out, scale 1s ease-in-out;
+}
+
+.Material-img:hover {
+    opacity: 0.9;
+    scale: 1.1;
+}
+
+@media screen and (max-width: 769px) {
+    .Materials-h1 {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+        padding: 0 80px;
+    }
+
+    .Materials-text {
+        font-size: 1rem;
+        margin: 10px auto;
+    }
+
+    .Materials-nav {
+        margin: 1rem auto;
+    }
+
+    .Materials-a {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .Materials-grid {
+        gap: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Material-img {
+        width: 400px;
+        height: 500px;
+        padding: 0 0.2rem;
+    }
+
+    .Material-img:hover {
+        opacity: 0.9;
+        scale: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .Materials{
+        padding: 10px;
+      
+    }
+
+    .Materials-h1{
+        padding: 0 20px;
+        font-size: 1.5rem;
+    }
+    .Materials-nav{
+        gap: 5px;
+    }
+
+    .Materials-a{
+        font-size: 0.8rem;
+        
+    }
+
+    .Materials-grid{
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .Material-item{
+        margin: 0 auto;
+    }
+
+    .Material-img{
+        max-width: 390px;
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-color: var(--color-text) var(--color-bg1);
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--font-primary), var(--font-secondary), var(--font-tertiary), sans-serif;
+    
+}
+:root {
+    /* colores */
+    --color-text: #6d2323;
+    --color-hs: #8A1717;
+    --color-bg1: rgb(254, 249, 225);
+    --color-bg2: #E5D0AC;
+
+    /* tipografías */
+
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+    --font-tertiary: 'Lora', serif;
+
+    /* tamaño fuentes */
+
+    --font-size-small: 1rem; /*16px */
+    --font-size-medium:  1.25rem; /*20px */
+    --font-size-large: 1.75rem; /*28px */
+    --font-size-h: 2rem; /*32px */
+    
+
+    /* estilos del botón */
+    --button-padding: 12px 24px;
+    --button-radius: 10px;
+    --button-font-weight: 500;
+
+    /* sombras  */
+    --shadow-color-dark: rgba(0, 0, 0, 0.2);
+    --shadow-offset: 4px;
+    --shadow-blur: 8px;
+
+    /* espaciado (padding) del botón */
+    --padding-vertical: 12px;
+    --padding-horizontal:24px;
+    --border-radius: 10px;
+}
+
+.Body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: var(--color-bg1);
+}
+
+/* ICONOS */
+.material-symbols-outlined{
+    scale: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: scale 1s ease-in;
+    color: var(--color-hs);
+    transition: all 1.5s ease-in-out;
+    
+
+}
+.material-symbols-outlined:hover{
+    transform: rotateY(360deg); /*dar la vuelta */
+}
+
+@media screen and (max-width: 480px){
+    .material-symbols-outlined{
+        scale: 0.7;
+    }
+
+}

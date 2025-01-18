@@ -1,0 +1,54 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    gap: 20px;
+    flex: 1;
+    width: 90%;
+    margin: 60px;
+}
+
+.Main-text {
+    color: var(--color-text);
+    width: 60%;
+    font-size: var(--font-size-small);
+}
+
+.Main-h{
+    color: var(--color-hs);
+    font-size: var(--font-size-h);
+}
+
+@media screen and (max-width: 769px){
+    .Main{
+        width: 95%;
+        gap: 15px;
+        margin: 40px auto;
+    }
+
+    .Main-text{
+        width: 90%;
+    }
+    .Main-h{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .Main{
+        width: 85%;
+        
+    }
+
+    .Main-text{
+        width: 80%;
+        
+    }
+
+    .Main-h{
+        font-size: 1.3rem;
+    }
+}
+
