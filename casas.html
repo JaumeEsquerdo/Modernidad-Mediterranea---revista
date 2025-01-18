@@ -9,11 +9,11 @@
     <!-- cargo el favicon de la pñagina -->
     <link rel="icon" href="img/favicon-32x32.png" type="image/png">
 
-    <!-- aquí enlazo los css, primero el compartido con varios html que se llama globales, luego el especifico de la sección y después los compartidos de header y footer -->
+    <!-- aquí enlazo los css, primero el compartido con varios html que se llama globales, y luego los otros css como la estructura del html: header. sección y footer -->
     <link rel="stylesheet" href="css/globales.css">
 
-    <link rel="stylesheet" href="css/casas.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/casas.css">
     <link rel="stylesheet" href="css/footer.css">
 
     <!-- links de fuentes que utilizo y también de iconos -->
@@ -22,7 +22,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <!-- archivos js con defer para que se ejecuten al final -->
+    <!-- archivos js con defer para que se ejecuten al final -->
     <script defer src="js/casas.js"></script>
     <script defer src="js/global.js"></script>
 </head>
@@ -57,12 +57,12 @@
 
             <div class="Btn-div">
                 <button class="BtnMosaico" id="mosaicoBtn"><span id="mosaicoSpan" class="material-symbols-outlined">
-                    transition_dissolve
+                        transition_dissolve
                     </span></button>
                 <button class="BtnGrid" id="gridBtn">
                     <span id="gridSpan" class="material-symbols-outlined isActive">
                         drag_indicator
-                        </span></button>
+                    </span></button>
             </div>
         </section>
 
@@ -116,4 +116,5 @@
         </div>
     </footer>
 </body>
+
 </html>

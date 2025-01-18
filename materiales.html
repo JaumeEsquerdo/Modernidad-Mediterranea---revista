@@ -8,25 +8,25 @@
 
 
 
-<!-- cargo el favicon de la pñagina -->
-<link rel="icon" href="img/favicon-32x32.png" type="image/png">
+    <!-- cargo el favicon de la pñagina -->
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png">
 
-<!-- aquí enlazo los css, primero el compartido con varios html que se llama globales, luego el especifico de la sección y después los compartidos de header y footer -->
-<link rel="stylesheet" href="css/globales.css">
+    <!-- aquí enlazo los css, primero el compartido con varios html que se llama globales, y luego los otros css como la estructura del html: header. sección y footer -->
+    <link rel="stylesheet" href="css/globales.css">
 
-<link rel="stylesheet" href="css/materiales.css">
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/materiales.css">
+    <link rel="stylesheet" href="css/footer.css">
 
-<!-- links de fuentes que utilizo y también de iconos -->
-<link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- links de fuentes que utilizo y también de iconos -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- archivos js con defer para que se ejecuten al final -->
-<script defer src="js/global.js"></script>
-<script defer src="js/materiales.js"></script>
+    <script defer src="js/global.js"></script>
+    <script defer src="js/materiales.js"></script>
 
 </head>
 
@@ -60,7 +60,7 @@
             </div>
             <nav class="Materials-nav">
                 <!-- les pongo rel="nofollow" para q los buscadores no vean que el link de los filtros está vacío y penalice la página en el posicionamiento -->
-                <a class="Materials-a" rel="nofollow" href="#">Todos</a> 
+                <a class="Materials-a" rel="nofollow" href="#">Todos</a>
                 <a class="Materials-a" rel="nofollow" href="#">Piedra</a>
                 <a class="Materials-a" rel="nofollow" href="#">Cerámica</a>
                 <a class="Materials-a" rel="nofollow" href="#">Madera</a>
@@ -68,100 +68,124 @@
 
             <div class="Materials-grid">
                 <picture class="Material-item cerámica">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/bandeja.jpg" data-hover="img/materiales/bandeja2.jpg"
-                        src="img/materiales/bandeja.jpg" alt="bandeja de ceramica">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/bandeja.jpg"
+                        data-hover="img/materiales/bandeja2.jpg" src="img/materiales/bandeja.jpg"
+                        alt="bandeja de ceramica">
                 </picture>
                 <picture class="Material-item madera">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/aparador-madera.jpg" data-hover="img/materiales/aparador-2.jpg"
-                        src="img/materiales/aparador-madera.jpg" alt="aparador de madera">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/aparador-madera.jpg"
+                        data-hover="img/materiales/aparador-2.jpg" src="img/materiales/aparador-madera.jpg"
+                        alt="aparador de madera">
                 </picture>
                 <picture class="Material-item madera">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/butaca-eiva.jpg" data-hover="img/materiales/butaca-eiva-2.jpg"
-                        src="img/materiales/butaca-eiva.jpg" alt="butaca eiva">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/butaca-eiva.jpg"
+                        data-hover="img/materiales/butaca-eiva-2.jpg" src="img/materiales/butaca-eiva.jpg"
+                        alt="butaca eiva">
                 </picture>
                 <picture class="Material-item madera">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/cabecera-madera.jpg" data-hover="img/materiales/cabecera-madera-2.jpg"
-                        src="img/materiales/cabecera-madera.jpg" alt="cabecera de madera">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/cabecera-madera.jpg"
+                        data-hover="img/materiales/cabecera-madera-2.jpg" src="img/materiales/cabecera-madera.jpg"
+                        alt="cabecera de madera">
                 </picture>
                 <picture class="Material-item madera">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/cabecero-madera-3.jpg" data-hover="img/materiales/cabecero-madera-4.jpg"
-                        src="img/materiales/cabecero-madera-3.jpg" alt="cabecera de madera">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/cabecero-madera-3.jpg"
+                        data-hover="img/materiales/cabecero-madera-4.jpg" src="img/materiales/cabecero-madera-3.jpg"
+                        alt="cabecera de madera">
                 </picture>
                 <picture class="Material-item cerámica">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/ceramica3.jpg" data-hover="img/materiales/ceramica4.jpg"
-                        src="img/materiales/ceramica3.jpg" alt="objeto de ceramica">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/ceramica3.jpg"
+                        data-hover="img/materiales/ceramica4.jpg" src="img/materiales/ceramica3.jpg"
+                        alt="objeto de ceramica">
                 </picture>
                 <picture class="Material-item ceramica">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/ensalada-ceramica.jpg" data-hover="img/materiales/ensalada-ceramica2.jpg"
-                        src="img/materiales/ensalada-ceramica.jpg" alt="ensalada de ceramica">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/ensalada-ceramica.jpg"
+                        data-hover="img/materiales/ensalada-ceramica2.jpg" src="img/materiales/ensalada-ceramica.jpg"
+                        alt="ensalada de ceramica">
                 </picture>
                 <picture class="Material-item madera">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/espejo-madera.jpg" data-hover="img/materiales/espejo-madera-2.jpg"
-                        src="img/materiales/espejo-madera.jpg" alt="espejo de madera">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/espejo-madera.jpg"
+                        data-hover="img/materiales/espejo-madera-2.jpg" src="img/materiales/espejo-madera.jpg"
+                        alt="espejo de madera">
                 </picture>
                 <picture class="Material-item madera">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/estanteria-madera.jpg" data-hover="img/materiales/estanteria-madera-2.jpg"
-                        src="img/materiales/estanteria-madera.jpg" alt="estanteria de madera">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/estanteria-madera.jpg"
+                        data-hover="img/materiales/estanteria-madera-2.jpg" src="img/materiales/estanteria-madera.jpg"
+                        alt="estanteria de madera">
                 </picture>
                 <picture class="Material-item piedra">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/jarron-ceramica.jpg" data-hover="img/materiales/jarron-ceramica-2.jpg"
-                        src="img/materiales/jarron-ceramica.jpg" alt="jarron de ceramica">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/jarron-ceramica.jpg"
+                        data-hover="img/materiales/jarron-ceramica-2.jpg" src="img/materiales/jarron-ceramica.jpg"
+                        alt="jarron de ceramica">
                 </picture>
                 <picture class="Material-item cerámica">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/lampara-ceramica.jpg" data-hover="img/materiales/lampara-ceramica-2.jpg"
-                        src="img/materiales/lampara-ceramica.jpg" alt="lampara de ceramica">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/lampara-ceramica.jpg"
+                        data-hover="img/materiales/lampara-ceramica-2.jpg" src="img/materiales/lampara-ceramica.jpg"
+                        alt="lampara de ceramica">
                 </picture>
                 <picture class="Material-item cerámica">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/lampara-ceramica-3.jpg" data-hover="img/materiales/lampara-ceramica-4.jpg"
-                        src="img/materiales/lampara-ceramica-3.jpg" alt="lampara de ceramica">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/lampara-ceramica-3.jpg"
+                        data-hover="img/materiales/lampara-ceramica-4.jpg" src="img/materiales/lampara-ceramica-3.jpg"
+                        alt="lampara de ceramica">
                 </picture>
                 <picture class="Material-item cerámica">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/lampara-ceramica-5.jpg" data-hover="img/materiales/lampara-ceramica-6.jpg"
-                        src="img/materiales/lampara-ceramica-5.jpg" alt="lampara de ceramica">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/lampara-ceramica-5.jpg"
+                        data-hover="img/materiales/lampara-ceramica-6.jpg" src="img/materiales/lampara-ceramica-5.jpg"
+                        alt="lampara de ceramica">
                 </picture>
                 <picture class="Material-item madera">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/lampara-madera.jpg" data-hover="img/materiales/lampara-madera-2.jpg"
-                        src="img/materiales/lampara-madera.jpg" alt="lampara de madera">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/lampara-madera.jpg"
+                        data-hover="img/materiales/lampara-madera-2.jpg" src="img/materiales/lampara-madera.jpg"
+                        alt="lampara de madera">
                 </picture>
                 <picture class="Material-item piedra">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/lampara-piedra.jpg" data-hover="img/materiales/lampara-piedra-2.jpg"
-                        src="img/materiales/lampara-piedra.jpg" alt="lampara de piedra">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/lampara-piedra.jpg"
+                        data-hover="img/materiales/lampara-piedra-2.jpg" src="img/materiales/lampara-piedra.jpg"
+                        alt="lampara de piedra">
                 </picture>
                 <picture class="Material-item madera">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/mesa-noche.jpg" data-hover="img/materiales/mesa-noche-2.jpg"
-                        src="img/materiales/mesa-noche.jpg" alt="mesa de noche">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/mesa-noche.jpg"
+                        data-hover="img/materiales/mesa-noche-2.jpg" src="img/materiales/mesa-noche.jpg"
+                        alt="mesa de noche">
                 </picture>
                 <picture class="Material-item piedra">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/mesa-piedra.jpg" data-hover="img/materiales/mesa-piedra-2.jpg"
-                        src="img/materiales/mesa-piedra.jpg" alt="mesa de piedra">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/mesa-piedra.jpg"
+                        data-hover="img/materiales/mesa-piedra-2.jpg" src="img/materiales/mesa-piedra.jpg"
+                        alt="mesa de piedra">
                 </picture>
                 <picture class="Material-item piedra">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/mesilla-piedra.jpg" data-hover="img/materiales/mesilla-piedra-2.jpg"
-                        src="img/materiales/mesilla-piedra.jpg" alt="mesilla de piedra">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/mesilla-piedra.jpg"
+                        data-hover="img/materiales/mesilla-piedra-2.jpg" src="img/materiales/mesilla-piedra.jpg"
+                        alt="mesilla de piedra">
                 </picture>
                 <picture class="Material-item madera">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/mesita-noche.jpg" data-hover="img/materiales/mesita-noche2.jpg"
-                        src="img/materiales/mesita-noche.jpg" alt="mesita de noche">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/mesita-noche.jpg"
+                        data-hover="img/materiales/mesita-noche2.jpg" src="img/materiales/mesita-noche.jpg"
+                        alt="mesita de noche">
                 </picture>
                 <picture class="Material-item madera">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/mesita-noche.jpg" data-hover="img/materiales/mesitas-noche-2.jpg"
-                        src="img/materiales/mesitas-noche.jpg" alt="mesitas de noche">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/mesita-noche.jpg"
+                        data-hover="img/materiales/mesitas-noche-2.jpg" src="img/materiales/mesitas-noche.jpg"
+                        alt="mesitas de noche">
                 </picture>
                 <picture class="Material-item cerámica">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/perugia-ceramica.jpg" data-hover="img/materiales/perugia-ceramica2.jpg"
-                        src="img/materiales/perugia-ceramica.jpg" alt="perugia de ceramica">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/perugia-ceramica.jpg"
+                        data-hover="img/materiales/perugia-ceramica2.jpg" src="img/materiales/perugia-ceramica.jpg"
+                        alt="perugia de ceramica">
                 </picture>
                 <picture class="Material-item madera">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/sillon-madera.jpg" data-hover="img/materiales/sillon-madera-2.jpg"
-                        src="img/materiales/sillon-madera.jpg" alt="sillon de madera">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/sillon-madera.jpg"
+                        data-hover="img/materiales/sillon-madera-2.jpg" src="img/materiales/sillon-madera.jpg"
+                        alt="sillon de madera">
                 </picture>
                 <picture class="Material-item madera">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/sillon-madera-3.jpg" data-hover="img/materiales/sillon-madera-4.jpg"
-                        src="img/materiales/sillon-madera-3.jpg" alt="sillon de madera">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/sillon-madera-3.jpg"
+                        data-hover="img/materiales/sillon-madera-4.jpg" src="img/materiales/sillon-madera-3.jpg"
+                        alt="sillon de madera">
                 </picture>
                 <picture class="Material-item cerámica">
-                    <img loading="lazy" class="Material-img" data-original="img/materiales/caja-ceramica.jpg" data-hover="img/materiales/caja-ceramica-2.jpg"
-                        src="img/materiales/caja-ceramica.jpg" alt="caja de ceramica">
+                    <img loading="lazy" class="Material-img" data-original="img/materiales/caja-ceramica.jpg"
+                        data-hover="img/materiales/caja-ceramica-2.jpg" src="img/materiales/caja-ceramica.jpg"
+                        alt="caja de ceramica">
                 </picture>
             </div>
         </section>
