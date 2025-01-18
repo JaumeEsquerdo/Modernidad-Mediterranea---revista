@@ -7,14 +7,15 @@
     <title>Estilo Mediterráneo</title>
 
 
+    <!-- cargo el favicon de la pñagina -->
     <link rel="icon" href="img/favicon-32x32.png" type="image/png">
 
     <!-- aquí enlazo los css, primero el compartido con varios html que se llama globales, luego el especifico de la sección y después los compartidos de header y footer -->
-    <link rel="stylesheet" href="/css/globales.css">
+    <link rel="stylesheet" href="css/globales.css">
 
-    <link rel="stylesheet" href="/css/estilo-mediterraneo.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="css/estilo-mediterraneo.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <!-- links de fuentes que utilizo y también de iconos -->
     <link
@@ -22,7 +23,8 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+        <!-- archivos js con defer para que se ejecuten al final -->
+    <script defer src="js/global.js"></script>
 </head>
 
 <body class="Body">
@@ -30,10 +32,10 @@
     <header class="Header">
         <nav class="Header-nav">
             <ul class="Header-navList">
-                <li><a class="Header-navItem" href="/index.html">HOME</a></li>
-                <li><a class="Header-navItem" href="/estilo-mediterraneo.html">ESTILO MEDITERRÁNEO</a></li>
-                <li><a class="Header-navItem" href="/materiales.html">MATERIALES</a></li>
-                <li><a class="Header-navItem" href="/contact.html">CONTACTO</a></li>
+                <li><a class="Header-navItem" href="index.html">HOME</a></li>
+                <li><a class="Header-navItem" href="estilo-mediterraneo.html">ESTILO MEDITERRÁNEO</a></li>
+                <li><a class="Header-navItem" href="materiales.html">MATERIALES</a></li>
+                <li><a class="Header-navItem" href="contact.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -65,7 +67,7 @@
 
             <div class="Image-container">
                 <a href="http://127.0.0.1:5500/casas.html?id=SonSerra"><img loading="lazy" class="Image-item"
-                        src="/img/cases-de-son-serra-2.jpg" alt="Cases de Son Serra"></a>
+                        src="img/cases-de-son-serra-2.jpg" alt="Cases de Son Serra"></a>
                 <div class="Location-image">
                     <p class="Location-text">Mallorca, España</p>
                     <p class="Location-text">Cases de Son Serra</p>
@@ -75,7 +77,7 @@
             <div class="Image-container">
 
                 <a href="http://127.0.0.1:5500/casas.html?id=Amaro">
-                    <img class="Image-item" loading="lazy" src="/img/casa-amaro-sanchez-1.jpg"
+                    <img class="Image-item" loading="lazy" src="img/casa-amaro-sanchez-1.jpg"
                         alt="Casa de Amaro Sánchez">
                 </a>
                 <div class="Location-image">
@@ -87,7 +89,7 @@
             <div class="Image-container">
 
                 <a href="http://127.0.0.1:5500/casas.html?id=Hollywood">
-                    <img class="Image-item" loading="lazy" src="/img/casa-hollywood-1.jpg" alt="Casa en Hollywood">
+                    <img class="Image-item" loading="lazy" src="img/casa-hollywood-1.jpg" alt="Casa en Hollywood">
                 </a>
                 <div class="Location-image">
                     <p class="Location-text">California, EEUU</p>
@@ -98,7 +100,7 @@
             <div class="Image-container">
 
                 <a href="http://127.0.0.1:5500/casas.html?id=Jaime-Salva">
-                    <img class="Image-item" loading="lazy" src="/img/casa-jaime-salva-1.jpg" alt="Casa en Mallorca">
+                    <img class="Image-item" loading="lazy" src="img/casa-jaime-salva-1.jpg" alt="Casa en Mallorca">
                 </a>
                 <div class="Location-image">
                     <p class="Location-text">Mallorca, España</p>
@@ -109,7 +111,7 @@
             <div class="Image-container">
 
                 <a href="http://127.0.0.1:5500/casas.html?id=Plugia">
-                    <img class="Image-item" loading="lazy" src="/img/casa-puglia-1.jpg" alt="Casa en Puglia">
+                    <img class="Image-item" loading="lazy" src="img/casa-puglia-1.jpg" alt="Casa en Puglia">
                 </a>
                 <div class="Location-image">
                     <p class="Location-text">Puglia, Italia</p>
@@ -141,23 +143,19 @@
                 </span></a>
         </div>
         <div class="Footer-columna">
-            <a class="Footer-links" href="/politica-privacidad.html">Política de privacidad
+            <a class="Footer-links" href="politica-privacidad.html">Política de privacidad
                 <span class="material-symbols-outlined">
                     moving
                 </span></a>
-            <a class="Footer-links" href="/terminos-condiciones.html">Términos y condiciones <span
+            <a class="Footer-links" href="terminos-condiciones.html">Términos y condiciones <span
                     class="material-symbols-outlined">
                     moving
                 </span></a>
-            <a class="Footer-links" href="/paginas-referencia.html">Páginas de referencia <span
+            <a class="Footer-links" href="paginas-referencia.html">Páginas de referencia <span
                     class="material-symbols-outlined">
                     moving
                 </span></a>
         </div>
-
     </footer>
-
-
 </body>
-
 </html>
