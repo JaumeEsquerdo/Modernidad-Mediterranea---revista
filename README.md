@@ -13,13 +13,14 @@ La estructura del sitio incluye varias secciones clave:
 
 Inicio, donde introduzco el estilo con una breve explicación y una llamada a la acción para explorar más contenido.
 
-Estilo Moderno Mediterráneo, una sección donde muestro mediante imagenes ejemplos de casas que representan el estilo de mediterráneo con la versión "moderna" del mismo. Es decir el enfoque actual al estilo de siempre del mediterráneo. Cada imagen es clickable y te lleva a la entrada correspondiente donde se ve cada casa con más detalle,
+Estilo Moderno Mediterráneo, una sección donde muestro mediante imagenes ejemplos de casas que representan el estilo de mediterráneo con la versión "moderna" del mismo. Es decir el enfoque actual al estilo de siempre del mediterráneo. Cada imagen es clickable y te lleva a la entrada correspondiente donde se ve cada casa con más detalle.
 
-Inspiración por materiales, una galería de fotos con un  
+Inspiración por materiales, una seccion con galería de fotos que muestra objetos creados con los materiales que más se utilizan para la decoración mediterránea: la cerámica, la madera y la piedra. Tiene también un filtro, que muestra por materiales estos objetos.
 
 Contacto, donde los usuarios podrán conocer más sobre el proyecto, el porque de mi proyecto y en general un poco área más personal.
 
 Además, he incorporado elementos interactivos para enriquecer la experiencia del usuario. Entre ellos:
 
 - Slider
-- Filtro de objetos. 
+- Filtro de objetos.
+- Generador de imagenes dinámicas según la imágen clicada anterior.
