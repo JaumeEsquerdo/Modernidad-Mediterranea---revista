@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modernidad Mediterránea</title>
 
-
+    <!-- cargo el favicon de la pñagina -->
     <link rel="icon" href="img/favicon-32x32.png" type="image/png">
 
-    <link rel="stylesheet" href="/css/globales.css">
+    <!-- aquí enlazo los css, primero el compartido con varios html que se llama globales, luego el especifico de la sección y después los compartidos de header y footer -->
+    <link rel="stylesheet" href="css/globales.css">
 
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/estilo-mediterraneo.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 
+    <!-- links de fuentes que utilizo y también de iconos -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <!-- archivos js con defer para que se ejecuten al final -->
     <script defer src="js/index.js"></script>
 </head>
 
 <body class="Body">
     <!-- Primer fondo -->
     <section class="FondoInicial isVisible">
-        <img class="FondoHome" src="/img/fondo-primero.jpg" loading="lazy" alt="Casa mediterránea">
+        <img class="FondoHome" src="img/fondo-primero.jpg" loading="lazy" alt="Casa mediterránea">
         <div class="Overlay"></div>
         <header class="Header">
             <div class="Header-container">
@@ -57,6 +62,7 @@
     <!-- Segundo fondo -->
     <section class="FondoSegundo isHidden">
         <img class="FondoHome" src="/img/fondo-segundo.jpg" loading="lazy" alt="Casa mediterránea">
+        <!-- Overlay es un filtro que utilizo para aplicar en la img, para hacerla más oscuro. En otra sección hago lo mismo con alguna img pero directamente a la img con CSS filter (la descubrí tarde) -->
         <div class="Overlay"></div>
         <div class="MainText">
             <h2 class="FondoInicial-subTitle">Descubre cómo los espacios abiertos y multifuncionales, junto con
@@ -91,5 +97,4 @@
         </div>
     </section>
 </body>
-
 </html>
