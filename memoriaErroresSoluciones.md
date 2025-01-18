@@ -191,3 +191,8 @@ La solución, al haberme ocurrido ya en alguna actividad de clase durante el cur
 error: src="/img/fondo-segundo.jpg"
 
 solución: src="img/fondo-segundo.jpg" 
+
+
+## Problema para enlazar
+
+En la parte de las entradas de las casas, en la que comparten un css común, al principio lo tenia enlazado en las paginas locales con las que trabajamos. como `http://127.0.0.1:5500/casas.html?id=Amaro`. Una vez pasado a github tuve que cambiarlo por el link que genera github para que tuviese correspondencia. El cambio fue a `https://jaumeesquerdo.github.io/proyecto-final/casas.html?id=Amaro `
