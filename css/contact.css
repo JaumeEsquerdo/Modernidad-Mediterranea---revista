@@ -19,13 +19,13 @@
           filter: grayscale(66%);
           /* filter grayscale para hacer blanco y negro la img */
           width: auto;
-          height: 900px;
+          height: 800px;
           object-fit: cover;
       }
 
       .Contact {
           width: 70%;
-          height: 70vh;
+          height: 62vh;
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
