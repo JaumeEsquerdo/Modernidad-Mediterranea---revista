@@ -196,3 +196,17 @@ solución: src="img/fondo-segundo.jpg"
 ## Problema para enlazar
 
 En la parte de las entradas de las casas, en la que comparten un css común, al principio lo tenia enlazado en las paginas locales con las que trabajamos. como `http://127.0.0.1:5500/casas.html?id=Amaro`. Una vez pasado a github tuve que cambiarlo por el link que genera github para que tuviese correspondencia. El cambio fue a `https://jaumeesquerdo.github.io/proyecto-final/casas.html?id=Amaro `
+
+
+También tuve un problema a la hora de enlazar el archivo de JS `global.js` ya que comparaba la ruta del local del href de los navs con el actual para activarle la clase isActive 
+
+```js
+const currentPath = window.location.pathname; //agarra el final de la URL 
+headerNavs.forEach(nav => {
+    if (nav.getAttribute('href') == currentPath) { //compara el atributo href del enlace con el final de la URL y si es el mismo ejecuta el codigo
+        nav.classList.add('isActive');
+    }
+});
+```
+
+para solucionar esto tuve que quitar la parte inicial del href para conseguir solo el final de la URL
