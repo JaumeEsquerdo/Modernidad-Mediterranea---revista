@@ -32,6 +32,8 @@ headerNavs.forEach(nav => {
     if (currentURL == absoluteURL) {
         nav.classList.add('isActive');
     }
+    console.log(currentURL);
+    console.log(absoluteURL);
 
 });
 
