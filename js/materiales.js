@@ -2,30 +2,9 @@
 
         const navLinks = document.querySelectorAll('.Materials-nav a');
         const materialItems = document.querySelectorAll('.Material-item');
-        const headerNavs = document.querySelectorAll('.Header-navItem');
         const images = document.querySelectorAll('.Material-img');
 
         /* funciones pagina MATERIALES */
-
-        function activeNav() {
-            const currentPath = window.location.pathname;
-
-            headerNavs.forEach(nav => {
-                if (nav.getAttribute('href') == currentPath) {
-                    nav.classList.add('active');
-                }
-            });
-
-            headerNavs.forEach(nav => {
-                nav.addEventListener('click', event => {
-                    event.preventDefault();
-
-                    headerNavs.forEach(a => a.classList.remove('active'));
-
-                    nav.classList.add('active');
-                });
-            });
-        };
 
         /* función para cambiar las imágenes cuando hagas hover */
 
@@ -77,7 +56,6 @@
         }
 
         document.addEventListener('DOMContentLoaded', ()=>{
-            activeNav(); //marcar el nav activo del header
             imageHover(); //configura el hover de las img
             categoryFilter(); // configura el filtro segun material
 

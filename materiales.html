@@ -8,20 +8,25 @@
 
 
 
-    <link rel="icon" href="img/favicon-32x32.png" type="image/png">
-    <link rel="stylesheet" href="/css/globales.css">
+<!-- cargo el favicon de la pñagina -->
+<link rel="icon" href="img/favicon-32x32.png" type="image/png">
 
-    <link rel="stylesheet" href="/css/materiales.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/footer.css">
+<!-- aquí enlazo los css, primero el compartido con varios html que se llama globales, luego el especifico de la sección y después los compartidos de header y footer -->
+<link rel="stylesheet" href="css/globales.css">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <!-- enlace a la fuente de google fonts -->
+<link rel="stylesheet" href="css/materiales.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
 
+<!-- links de fuentes que utilizo y también de iconos -->
+<link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- archivos js con defer para que se ejecuten al final -->
+<script defer src="js/global.js"></script>
+<script defer src="js/materiales.js"></script>
 
 </head>
 
@@ -29,10 +34,10 @@
     <header class="Header">
         <nav class="Header-nav">
             <ul class="Header-navList">
-                <li><a class="Header-navItem" href="/index.html">HOME</a></li>
-                <li><a class="Header-navItem" href="/estilo-mediterraneo.html">ESTILO MEDITERRÁNEO</a></li>
-                <li><a class="Header-navItem" href="/materiales.html">MATERIALES</a></li>
-                <li><a class="Header-navItem" href="/contact.html">CONTACTO</a></li>
+                <li><a class="Header-navItem" href="index.html">HOME</a></li>
+                <li><a class="Header-navItem" href="estilo-mediterraneo.html">ESTILO MEDITERRÁNEO</a></li>
+                <li><a class="Header-navItem" href="materiales.html">MATERIALES</a></li>
+                <li><a class="Header-navItem" href="contact.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -158,18 +163,10 @@
                     <img loading="lazy" class="Material-img" data-original="img/materiales/caja-ceramica.jpg" data-hover="img/materiales/caja-ceramica-2.jpg"
                         src="img/materiales/caja-ceramica.jpg" alt="caja de ceramica">
                 </picture>
-
-
-
-
-
-
             </div>
-
-
         </section>
-
     </main>
+
     <footer class="Footer">
         <div class="Footer-columna">
             <h3 class="Footer-titulo">AUTOR DE LA PÁGINA</h3>
@@ -192,77 +189,20 @@
                 </span></a>
         </div>
         <div class="Footer-columna">
-            <a class="Footer-links" href="/politica-privacidad.html">Política de privacidad
+            <a class="Footer-links" href="politica-privacidad.html">Política de privacidad
                 <span class="material-symbols-outlined">
                     moving
                 </span></a>
-            <a class="Footer-links" href="/terminos-condiciones.html">Términos y condiciones <span
+            <a class="Footer-links" href="terminos-condiciones.html">Términos y condiciones <span
                     class="material-symbols-outlined">
                     moving
                 </span></a>
-            <a class="Footer-links" href="/paginas-referencia.html">Páginas de referencia <span
+            <a class="Footer-links" href="paginas-referencia.html">Páginas de referencia <span
                     class="material-symbols-outlined">
                     moving
                 </span></a>
         </div>
-
     </footer>
-    <script>
-        /*CONSTANTES PARA LAS TAXONOMIAS/FILTROS MATERIALES */
-
-        //agarro las constantes con querySelectorAll porque hay varios items y es mas accesible que con getElementById
-        const navLinks = document.querySelectorAll('.Materials-a');
-        const materialItems = document.querySelectorAll('.Material-item');
-        
-
-        /*CONST IMAGES PARA CAMBIAR DE IMG EN HOVER */
-
-        //seleccionamos todas las imagenes
-        const images = document.querySelectorAll('.Material-img');
-
-        images.forEach(image => {
-
-            image.addEventListener('mouseenter', () => {
-                image.src = image.dataset.hover; //cambiamos la imagen por la que tiene el data-hover puesto en la img (data no actua como src si no q guardo el src ahi para luego ponerlo/devolverlo al src)
-            });
-
-
-            //restauramos la imagen que estaba antes al salir del hover
-
-            image.addEventListener('mouseleave', () => {
-                image.src = image.dataset.original; //cambiamos la imagen por la que tiene el data original
-            });
-        });
-
-
-        navLinks.forEach(link => {
-
-            link.addEventListener('click', (i) => {
-                i.preventDefault(); //evitar que se recargue la pagina(comportamiento predterminaado de recargar la pagina de los links)
-
-                const category = link.textContent.toLowerCase().trim(); //obtengo el texto de los links de las taxonomias y los paso a minúscula y les quito los espacios en blanco de izq y derecha
-
-                materialItems.forEach(item => {
-                    if (category == 'todos' || item.classList.contains(category)) { //comprueba si la clase del item tiene una clase que coincide con la constante category O categoria 'todos'(que siempre será verdadera en caso de clickar en todos)
-
-                        item.style.display = 'block'; // muestra la imagen si coincide la clase del item con "todos" o si está en la constante category
-                    } else {
-                        item.style.display = 'none'; // oculta la imagen si no coincide la clase del item con "todos" o si no está en la constante category
-                    }
-                });
-
-                //eliminar y agregar la clase activa para que se entienda que taxonomía/filtro has clickado
-                navLinks.forEach(nav => nav.classList.remove('isActive')); //primero elimo la clase active de todos los links para que no se quede con el active el link seleccionado anterior
-
-                link.classList.add('isActive'); // "link" es el elemento que ha sido clickado, sale de aqui "navLinks.forEach(link =>"" y se le añade la clase active
-
-            });
-
-            navLinks[0].click(); //para q al cargar siempre muestre la primera taxonomía con el active puesto (que muester 'todos')
-        });
-
-    </script>
-
 </body>
 
 </html>
