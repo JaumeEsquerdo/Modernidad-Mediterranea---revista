@@ -138,6 +138,7 @@
     object-fit: cover;
     filter: brightness(75%);
     transition: filter 0.4s ease-in;
+    aspect-ratio: 16/9; /* asegurar la posición igual de todas*/
 }
 
 .Slider-image:hover {
