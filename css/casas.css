@@ -98,7 +98,7 @@
 }
 
 .isActive {
-    transform: scale(2);
+    scale: 2;
     font-weight: 600;
 }
 
@@ -324,9 +324,7 @@
         
     }
 
-    .isActive {
-       transform: scale(1.3);
-    }
+    
     
 
 }
