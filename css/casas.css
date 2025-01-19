@@ -90,6 +90,7 @@
 /* active de ICONO */
 .material-symbols-outlined {
     margin-right: 15px;
+    transition: all 1s ease-in-out;
 }
 
 .material-symbols-outlined:active {
