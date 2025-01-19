@@ -3,7 +3,9 @@
 
 Este proyecto es mi trabajo final de HTML, CSS y JavaScript para la escuela CEI Valencia. En él, he decidido combinar mis conocimientos técnicos con mi pasión por la arquitectura y el diseño para crear una página web que inspire y eduque a los usuarios sobre el estilo moderno mediterráneo. Este proyecto no solo es una oportunidad para demostrar lo aprendido, sino también un homenaje a mis raíces y a la influencia que la arquitectura ha tenido en mi vida.
 
-He utilizado 3 lenguajes para la creación de esta página web: HTML (para introducir el contenido de la página), CSS (para estilar la propia página) y Javascript (para tanto dar funcionalidad, como para introducir elementos de forma dinámica).
+He utilizado 3 lenguajes para la creación de esta página web: HTML (para introducir el contenido de la página), CSS (para estilar la propia página) y Javascript (para tanto dar funcionalidad, como para introducir elementos de forma dinámica). 
+
+Y he utilizado la metodología SUICSS para las clases de CSS
 
 ## El por qué de esta página en concreto
 
@@ -13,5 +15,5 @@ Con el tiempo, esta fascinación evolucionó gracias a mi afición por el cine y
 
 El proyecto consiste en una página web que funciona como un blog interactivo, diseñado para inspirar a los usuarios y brindarles herramientas para aplicar el estilo moderno mediterráneo en sus propios hogares. Este estilo no es solo una tendencia decorativa, sino una forma de vida que destaca la luz natural, los materiales orgánicos y una conexión equilibrada entre el interior y el exterior.
 
-Autor de la página: Jaume Esquerdo Ramis
+# Autor de la página: Jaume Esquerdo Ramis
 
