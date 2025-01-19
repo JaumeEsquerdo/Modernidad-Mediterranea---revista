@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 480px){
     .material-symbols-outlined{
-        scale: 0.7;
+        transform: scale(0.7);
     }
 
 }
