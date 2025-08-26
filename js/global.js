@@ -5,9 +5,9 @@ const currentURL = window.location.href;
 
 // detectar si estoy en github pages o en local
 const basePath = window.location.pathname.includes('/Modernidad-Mediterranea---revista')
-  ? '/Modernidad-Mediterranea---revista/'
-  : '/';
-  
+    ? '/Modernidad-Mediterranea---revista/'
+    : '/';
+
 headerNavs.forEach(nav => {
     const href = nav.getAttribute('href'); // para obtener el href del .Header-navItem del html
 
