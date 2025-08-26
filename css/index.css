@@ -1,7 +1,13 @@
-.Body{
-    height: 100vh;
+.Body {
+    min-height: 100vh;
     overflow: hidden;
 }
+
+html {
+    overflow-y: scroll;
+    
+}
+
 .Header {
     display: flex;
     flex-direction: column;
@@ -41,7 +47,8 @@
 .Header-navItem:hover {
     color: var(--color-bg2);
     transform: scale(1.1);
-    transform: translate(5px, 5px); /* mueve el elemento en X y en Y*/
+    transform: translate(5px, 5px);
+    /* mueve el elemento en X y en Y*/
 }
 
 .Header-navList {
@@ -122,7 +129,7 @@
     transition: all 0.3s ease;
     cursor: pointer;
     border: none;
-    
+
 }
 
 .btnFondoTercero:hover {
@@ -132,9 +139,9 @@
 }
 
 .btnFondoTercero:active {
-        /* Efecto clic, tiene la propiedad "inset" que genera la sombra dentro del elemento, es decir del borde hacia dentro */
-        box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-color-dark),
-        inset calc(var(--shadow-offset) * -1) calc(var(--shadow-offset) * -1) var(--shadow-blur) var( --shadow-color-dark);
+    /* Efecto clic, tiene la propiedad "inset" que genera la sombra dentro del elemento, es decir del borde hacia dentro */
+    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-color-dark),
+        inset calc(var(--shadow-offset) * -1) calc(var(--shadow-offset) * -1) var(--shadow-blur) var(--shadow-color-dark);
     /* Efecto pulsado */
 }
 
@@ -245,114 +252,115 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
-    
-    
+
+
     align-items: center;
-    
+
 }
 
-.Btn-nxt:hover{
-    background: var(--color-bg2); 
-    
+.Btn-nxt:hover {
+    background: var(--color-bg2);
+
 }
 
-.Btn-nxt:active{
-        /* Efecto clic, tiene la propiedad "inset" que genera la sombra dentro del elemento, es decir del borde hacia dentro */
-        box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-color-dark),
-        inset calc(var(--shadow-offset) * -1) calc(var(--shadow-offset) * -1) var(--shadow-blur) var( --shadow-color-dark);
+.Btn-nxt:active {
+    /* Efecto clic, tiene la propiedad "inset" que genera la sombra dentro del elemento, es decir del borde hacia dentro */
+    box-shadow: inset var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-color-dark),
+        inset calc(var(--shadow-offset) * -1) calc(var(--shadow-offset) * -1) var(--shadow-blur) var(--shadow-color-dark);
     /* Efecto pulsado */
 
 }
 
 
-@media screen and (max-width: 768px){
-    .Header{
+@media screen and (max-width: 768px) {
+    .Header {
         height: 1000px;
     }
 
-    .Logo{
+    .Logo {
         font-size: 4rem;
     }
 
-    .Header-nav{
+    .Header-nav {
         width: 90%;
 
     }
 
-    .FondoInicial-title{
+    .FondoInicial-title {
         font-size: 3.5rem;
 
     }
 
-    .FondoInicial-subTitle{
+    .FondoInicial-subTitle {
         font-size: 1.5rem;
     }
 
-    .BtnFondoTercero{
+    .BtnFondoTercero {
         width: 50%;
     }
 
-    .MainText{
+    .MainText {
         width: 90%;
     }
 
 
 }
 
-@media screen and (max-width:480px){
-.Body{
-    height: auto;
-    
-}
+@media screen and (max-width:480px) {
+    .Body {
+        height: auto;
 
-.Header{
-    height: 800px;
-}
+    }
 
-.Logo{
-    font-size: 2rem;
-}
+    .Header {
+        height: 800px;
+    }
 
-.Header-nav{
-    width: 100%;
-    padding:10px;
-}
+    .Logo {
+        font-size: 2rem;
+    }
 
-.Header-navItem{
-    font-size: 1.3rem;
-}
+    .Header-nav {
+        width: 100%;
+        padding: 10px;
+    }
 
-.Header-navList{
-    gap:10px;
-}
+    .Header-navItem {
+        font-size: 1.3rem;
+    }
 
-.FondoInicial-title{
-    font-size: 2rem;
-}
+    .Header-navList {
+        gap: 10px;
+    }
 
-.FondoInicial-subTitle{
-    font-size: 1rem;
+    .FondoInicial-title {
+        font-size: 2rem;
+    }
 
-}
+    .FondoInicial-subTitle {
+        font-size: 1rem;
 
-.btnFondoTercero{
-    width: 70%;
-}
+    }
 
-.Btn-nxt{
-    width: 50px;
-    height: 40px;
-}
+    .btnFondoTercero {
+        width: 70%;
+    }
 
-.MainText{
+    .Btn-nxt {
+        width: 50px;
+        height: 40px;
+    }
 
-    font-size: 1rem;
-    padding: 10px;
-    width: 100%;
-}
-.btnFondoTercero{
-    font-size: 1rem;
-}
+    .MainText {
+
+        font-size: 1rem;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .btnFondoTercero {
+        font-size: 1rem;
+    }
 
 
 
