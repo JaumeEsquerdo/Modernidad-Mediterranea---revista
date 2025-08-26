@@ -1,12 +1,17 @@
+// Detectar si estoy en GitHub Pages o en local
+window.basePath = window.location.pathname.includes('/Modernidad-Mediterranea---revista')
+    ? '/Modernidad-Mediterranea---revista/'
+    : '/';
+
 const headerNavs = document.querySelectorAll('.Header-navItem');
 
 //obtengo la URL completa de la pagina actual
 const currentURL = window.location.href;
 
-// detectar si estoy en github pages o en local
-const basePath = window.location.pathname.includes('/Modernidad-Mediterranea---revista')
-    ? '/Modernidad-Mediterranea---revista/'
-    : '/';
+// // detectar si estoy en github pages o en local
+// const basePath = window.location.pathname.includes('/Modernidad-Mediterranea---revista')
+//     ? '/Modernidad-Mediterranea---revista/'
+//     : '/';
 
 headerNavs.forEach(nav => {
     const href = nav.getAttribute('href'); // para obtener el href del .Header-navItem del html
@@ -26,7 +31,7 @@ headerNavs.forEach(nav => {
     * Y con window.location.origin incluyo el orgien de la URL actual en este caso, ejemplo = `https://jaumeesquerdo.github.io`
     * Y para que funcione se pone primero la parte que quiero modificar (basePath + href) y despues de la coma el origen de la base (window.location.origin)
      */
-    const absoluteURL = new URL(basePath + href, window.location.origin).href;
+    const absoluteURL = new URL(window.basePath + href, window.location.origin).href;
 
 
     //añado la clase "isActive" al nav que le corersponda
