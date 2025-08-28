@@ -28,36 +28,36 @@ function showSection(sectionToShow, sectionToHide) {
 
 };
 
-window.addEventListener('wheel', (evento) => {
-    if (evento.deltaY > 0) {
-        console.log('scroll hacia abajo');
+// window.addEventListener('wheel', (evento) => {
+//     if (evento.deltaY > 0) {
+//         console.log('scroll hacia abajo');
 
-        //si desplazo la rueda del raton hacia abajo...
-        if (fondoInicial.classList.contains('isVisible')) { //contains significa si contiene algo, en este caso si contiene la clase isVisible
+//         //si desplazo la rueda del raton hacia abajo...
+//         if (fondoInicial.classList.contains('isVisible')) { //contains significa si contiene algo, en este caso si contiene la clase isVisible
 
-            showSection(fondoSegundo, fondoInicial);
-        } //si el fondoInicial tiene puesto el display flex entonces se aplica el if de arriba, que hace q se ejecute la funcion showSection por la que fondoSegundo actua como "sectionToShow" y fondoInicial como "sectionToHide"
-        else if (fondoSegundo.classList.contains('isVisible')) {
-            showSection(fondoTercero, fondoSegundo);
-        }
-        else if (fondoTercero.classList.contains('isVisible')) {
-            showSection(fondoInicial, fondoTercero);
-        }
+//             showSection(fondoSegundo, fondoInicial);
+//         } //si el fondoInicial tiene puesto el display flex entonces se aplica el if de arriba, que hace q se ejecute la funcion showSection por la que fondoSegundo actua como "sectionToShow" y fondoInicial como "sectionToHide"
+//         else if (fondoSegundo.classList.contains('isVisible')) {
+//             showSection(fondoTercero, fondoSegundo);
+//         }
+//         else if (fondoTercero.classList.contains('isVisible')) {
+//             showSection(fondoInicial, fondoTercero);
+//         }
 
-    } else if (evento.deltaY < 0) {
-        //si desplazo la rueda del raton hacia arriba...
-        if (fondoInicial.classList.contains('isVisible')) {
-            showSection(fondoTercero, fondoInicial);
-        }
-        else if (fondoSegundo.classList.contains('isVisible')) {
-            showSection(fondoInicial, fondoSegundo);
-        }
-        else if (fondoTercero.classList.contains('isVisible')) {
-            showSection(fondoSegundo, fondoTercero);
-        }
-        //aqui estoy haciendo lo mismo, poero hacia arriba
-    }
-});
+//     } else if (evento.deltaY < 0) {
+//         //si desplazo la rueda del raton hacia arriba...
+//         if (fondoInicial.classList.contains('isVisible')) {
+//             showSection(fondoTercero, fondoInicial);
+//         }
+//         else if (fondoSegundo.classList.contains('isVisible')) {
+//             showSection(fondoInicial, fondoSegundo);
+//         }
+//         else if (fondoTercero.classList.contains('isVisible')) {
+//             showSection(fondoSegundo, fondoTercero);
+//         }
+//         //aqui estoy haciendo lo mismo, poero hacia arriba
+//     }
+// });
 
 
 //para que funcione tambien el boton de avanzar...
