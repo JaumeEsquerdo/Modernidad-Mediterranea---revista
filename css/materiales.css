@@ -91,7 +91,7 @@
     scale: 1.1;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1080px) {
     .Materials-h1 {
         font-size: 1.8rem;
         margin: 1rem 0;
