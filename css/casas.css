@@ -203,6 +203,10 @@
         padding: 20px;
     }
 
+    .Main-houseDescription {
+        width: 70%;
+    }
+
     .Main-div {
         flex-direction: column;
         gap: 40px;
