@@ -1,4 +1,4 @@
-# Proyecto Final Diseño Web CEI — *Modernidad Mediterránea*
+# Proyecto Final Diseño Web HTML, CSS Y JS del máster CEI Valencia — *Modernidad Mediterránea*
 
 `Modernidad Mediterránea` es una revista digital sobre arquitectura moderna mediterránea, con ejemplos de casas, materiales y referencias visuales.  
 
