@@ -33,7 +33,7 @@
 }
 
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 1080px){
     .Header{
         flex-direction: column;
         align-items: flex-start;

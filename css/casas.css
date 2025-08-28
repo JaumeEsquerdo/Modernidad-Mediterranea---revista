@@ -196,7 +196,7 @@
 }
 
 /* Ajuste responsive para tablet*/
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1080px) {
     .Main-house {
 
 

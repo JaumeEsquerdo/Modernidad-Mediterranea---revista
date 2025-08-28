@@ -21,7 +21,7 @@
     font-size: var(--font-size-h);
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 1080px){
     .Main{
         width: 95%;
         gap: 15px;

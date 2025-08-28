@@ -116,7 +116,7 @@
       }
 
       /* media queries para tablet*/
-      @media screen and (max-width: 769px) {
+      @media screen and (max-width: 1080px) {
           .Main {
               flex-direction: column-reverse;
               align-items: center;
