@@ -41,7 +41,6 @@
     }
 
     .Header-navList{
-        flex-direction: column;
         gap: 10px;
     
     }
