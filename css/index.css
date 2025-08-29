@@ -233,15 +233,15 @@ html {
 
     display: flex;
     justify-content: center;
-    height: 15%;
+    height: 12%;
     width: 100%;
     align-items: center;
     z-index: 2;
 }
 
 .Btn-nxt {
-    height: 45px;
-    width: 65px;
+    height: 40px;
+    width: 60px;
     background: rgba(254, 249, 225, 0.8);
     border-radius: var(--border-radius);
     border: none;
